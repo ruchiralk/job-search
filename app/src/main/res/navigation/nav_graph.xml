@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/job_search_destination">
+
+    <fragment
+        android:id="@+id/job_search_destination"
+        android:name="com.rmunidasa.jobsearch.ui.jobsearch.JobSearchFragment"
+        tools:layout="@layout/fragment_job_search">
+
+        <action
+            android:id="@+id/search_to_login_destination"
+            app:destination="@id/login_destination"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_bottom" />
+
+        <action
+            android:id="@+id/search_to_register_destination"
+            app:destination="@id/register_destination"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_bottom" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_destination"
+        android:name="com.rmunidasa.jobsearch.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/register_destination"
+        android:name="com.rmunidasa.jobsearch.ui.register.RegisterFragment"
+        tools:layout="@layout/fragment_register" />
+</navigation>
