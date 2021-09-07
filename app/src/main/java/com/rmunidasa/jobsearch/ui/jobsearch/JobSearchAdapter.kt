@@ -52,8 +52,8 @@ class JobSearchAdapter : PagingDataAdapter<UiModel, JobSearchViewHolder>(SHIFT_C
         private val SHIFT_COMPARATOR = object : DiffUtil.ItemCallback<UiModel>() {
 
             override fun areItemsTheSame(oldItem: UiModel, newItem: UiModel): Boolean {
-                return (oldItem is UiModel.SeparatorItem && newItem is UiModel.SeparatorItem && oldItem.label == newItem.label)
-                        || (oldItem is UiModel.ShiftItem && newItem is UiModel.ShiftItem && oldItem.result.shift == newItem.result.shift)
+                return (oldItem is UiModel.SeparatorItem && newItem is UiModel.SeparatorItem)
+                        || (oldItem is UiModel.ShiftItem && newItem is UiModel.ShiftItem)
             }
 
             override fun areContentsTheSame(
