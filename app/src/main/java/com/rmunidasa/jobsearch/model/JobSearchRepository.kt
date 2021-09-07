@@ -1,11 +1,11 @@
-package com.rmunidasa.jobsearch.data
+package com.rmunidasa.jobsearch.model
 
 import androidx.lifecycle.LiveData
-import androidx.paging.Pager
-import androidx.paging.PagingConfig
-import androidx.paging.PagingData
-import androidx.paging.liveData
+import androidx.paging.*
 import com.rmunidasa.jobsearch.api.TemperApiService
+import com.rmunidasa.jobsearch.data.JSPagingKeyFormatter
+import com.rmunidasa.jobsearch.data.JobSearchPagingResult
+import com.rmunidasa.jobsearch.data.JobSearchPagingSource
 import java.time.LocalDate
 import javax.inject.Inject
 

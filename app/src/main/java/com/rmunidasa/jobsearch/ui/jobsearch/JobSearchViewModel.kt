@@ -5,7 +5,7 @@ import androidx.paging.cachedIn
 import androidx.paging.insertSeparators
 import androidx.paging.map
 import com.rmunidasa.jobsearch.data.JobSearchPagingResult
-import com.rmunidasa.jobsearch.data.JobSearchRepository
+import com.rmunidasa.jobsearch.model.JobSearchRepository
 import com.rmunidasa.jobsearch.ui.util.Event
 import dagger.hilt.android.lifecycle.HiltViewModel
 import java.time.LocalDate
