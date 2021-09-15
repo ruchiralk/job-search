@@ -14,7 +14,7 @@ Please install all the dependencies using Gradle, The app is developed using And
 * Hilt DI
 * Retrofit2 + Moshi
 * MVVM  - Design Pattern
-* Jetpack Navigagtion / LiveData
+* Jetpack Navigation / LiveData
 * Glide for Image Caching
 * Android Paging 3 library for paging support
 
