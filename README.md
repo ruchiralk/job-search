@@ -6,7 +6,7 @@ This app is done as a part of Temper B.V tech assesment
 
 Please install all the dependencies using Gradle, The app is developed using Android Studio Arctic Fox.
 
-![Alt text](/screenshot.jpeg?raw=true )
+![Alt text](/screenshot.png?raw=true )
 
 ## Built with
 
@@ -23,7 +23,3 @@ I've decided to opt out using RxJava since LiveData is sufficient enough for the
 ## Authors
 
 * **Ruchira Munidasa** 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

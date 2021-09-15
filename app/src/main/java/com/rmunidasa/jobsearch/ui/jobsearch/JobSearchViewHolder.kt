@@ -24,7 +24,7 @@ sealed class JobSearchViewHolder(binding: ViewBinding) : RecyclerView.ViewHolder
                 // configure glide to lazy load images
                 Glide.with(itemView)
                     .asBitmap()
-                    .load(job.project.client.links.hero_image)
+                    .load(job.project.client.links.heroImage)
                     .downsample(DownsampleStrategy.CENTER_OUTSIDE)
                     .placeholder(ColorDrawable(Color.GRAY))
                     .fallback(ColorDrawable(Color.GRAY))
@@ -34,8 +34,8 @@ sealed class JobSearchViewHolder(binding: ViewBinding) : RecyclerView.ViewHolder
                 categoryTextview.text = job.category.name.uppercase()
                 labelTextview.text = job.project.client.name
                 durationTextview.text =
-                    formatDuration(item.result.shift.starts_at, item.result.shift.ends_at)
-                payTextView.text = formattedCurrencyText(item.result.shift.earnings_per_hour)
+                    formatDuration(item.result.shift.startsAt, item.result.shift.endsAt)
+                payTextView.text = formattedCurrencyText(item.result.shift.earningsPerHour)
             }
         }
 
